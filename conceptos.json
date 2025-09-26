@@ -1,5 +1,255 @@
 [
   {
+    "term": "Acceso concurrente",
+    "desc": "Capacidad de permitir que varios usuarios accedan y modifiquen la base de datos al mismo tiempo sin conflictos.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Acceso directo",
+    "desc": "Recuperación de datos sin necesidad de recorrer secuencialmente la memoria.",
+    "ref": "Silberschatz, Korth, & Sudarshan, 2020"
+  },
+  {
+    "term": "Acceso secuencial",
+    "desc": "Lectura de datos en el mismo orden en que fueron almacenados.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "ACID",
+    "desc": "Propiedades de Atomicidad, Consistencia, Aislamiento y Durabilidad en las transacciones.",
+    "ref": "Coronel & Morris, 2019"
+  },
+  {
+    "term": "Agregación",
+    "desc": "Operación que resume un conjunto de valores (ej. suma, promedio).",
+    "ref": "Date, 2004"
+  },
+  {
+    "term": "Álgebra relacional",
+    "desc": "Conjunto formal de operaciones aplicables a bases de datos relacionales.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "Análisis de consultas",
+    "desc": "Evaluación del rendimiento y optimización de consultas SQL.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Anonimización de datos",
+    "desc": "Proceso de eliminar información identificable de registros.",
+    "ref": "Coronel & Morris, 2019"
+  },
+  {
+    "term": "API de base de datos",
+    "desc": "Interfaz de programación que permite interacción con el SGBD.",
+    "ref": "Silberschatz et al., 2020"
+  },
+  {
+    "term": "Autenticación",
+    "desc": "Validación de la identidad de un usuario para acceder a los datos.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Backup",
+    "desc": "Copia de seguridad de datos almacenados en la base de datos.",
+    "ref": "Coronel & Morris, 2019"
+  },
+  {
+    "term": "Balanceo de carga",
+    "desc": "Distribución de consultas entre varios servidores para mejorar eficiencia.",
+    "ref": "Silberschatz et al., 2020"
+  },
+  {
+    "term": "Base de datos activa",
+    "desc": "Responde automáticamente a eventos mediante disparadores.",
+    "ref": "Date, 2004"
+  },
+  {
+    "term": "Base de datos centralizada",
+    "desc": "Los datos se almacenan en un único servidor.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Base de datos distribuida",
+    "desc": "Los datos están repartidos en varias ubicaciones físicas.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "Base de datos federada",
+    "desc": "Integración de múltiples bases de datos independientes.",
+    "ref": "Coronel & Morris, 2019"
+  },
+  {
+    "term": "Base de datos jerárquica",
+    "desc": "Organización en árbol, con relaciones padre-hijo.",
+    "ref": "Date, 2004"
+  },
+  {
+    "term": "Base de datos en memoria",
+    "desc": "Sistema que guarda datos directamente en RAM.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Base de datos NoSQL",
+    "desc": "Sistema que no utiliza el modelo relacional.",
+    "ref": "Coronel & Morris, 2019"
+  },
+  {
+    "term": "Base de datos relacional",
+    "desc": "Sistema basado en tablas con relaciones entre ellas.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "Cache de consultas",
+    "desc": "Almacenamiento temporal de resultados de consultas.",
+    "ref": "Silberschatz et al., 2020"
+  },
+  {
+    "term": "Cardinalidad",
+    "desc": "Número de elementos en un conjunto o relación.",
+    "ref": "Date, 2004"
+  },
+  {
+    "term": "Campo",
+    "desc": "Unidad de información en un registro.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Clave primaria",
+    "desc": "Identificador único de un registro.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "Clave foránea",
+    "desc": "Atributo que referencia a otra tabla.",
+    "ref": "Coronel & Morris, 2019"
+  },
+  {
+    "term": "Cliente-servidor",
+    "desc": "Arquitectura en la que un cliente consulta a un servidor.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Cluster de base de datos",
+    "desc": "Grupo de servidores que funcionan como un solo sistema.",
+    "ref": "Silberschatz et al., 2020"
+  },
+  {
+    "term": "Código SQL",
+    "desc": "Lenguaje para manejar bases de datos relacionales.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "Columna",
+    "desc": "Conjunto de valores de un mismo tipo en una tabla.",
+    "ref": "Date, 2004"
+  },
+  {
+    "term": "Consulta",
+    "desc": "Petición de datos al sistema gestor.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Dato",
+    "desc": "Unidad mínima de información.",
+    "ref": "Coronel & Morris, 2019"
+  },
+  {
+    "term": "Data mart",
+    "desc": "Subconjunto de un data warehouse orientado a un área específica.",
+    "ref": "Silberschatz et al., 2020"
+  },
+  {
+    "term": "Data mining",
+    "desc": "Descubrimiento de patrones en grandes volúmenes de datos.",
+    "ref": "Han, Kamber, & Pei, 2011"
+  },
+  {
+    "term": "Data warehouse",
+    "desc": "Almacén centralizado para análisis de datos históricos.",
+    "ref": "Inmon, 2005"
+  },
+  {
+    "term": "DBA",
+    "desc": "Administrador de base de datos encargado de su gestión.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "DDL",
+    "desc": "Lenguaje para definir estructuras de base de datos.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "DML",
+    "desc": "Lenguaje para manipular datos dentro de una base de datos.",
+    "ref": "Date, 2004"
+  },
+  {
+    "term": "Dominio",
+    "desc": "Conjunto de valores válidos de un atributo.",
+    "ref": "Silberschatz et al., 2020"
+  },
+  {
+    "term": "Denormalización",
+    "desc": "Reducción de la normalización para mejorar rendimiento.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Dependencia funcional",
+    "desc": "Relación en la que un atributo depende de otro.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "Entidad",
+    "desc": "Objeto o concepto del mundo real representado en una base de datos.",
+    "ref": "Date, 2004"
+  },
+  {
+    "term": "Entidad débil",
+    "desc": "Entidad que depende de otra para existir.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Entidad fuerte",
+    "desc": "Entidad que tiene existencia propia.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "Escalabilidad",
+    "desc": "Capacidad del sistema para crecer en carga de trabajo.",
+    "ref": "Silberschatz et al., 2020"
+  },
+  {
+    "term": "Esquema",
+    "desc": "Estructura que define cómo se organiza la base de datos.",
+    "ref": "Coronel & Morris, 2019"
+  },
+  {
+    "term": "Esquema lógico",
+    "desc": "Representación abstracta de la estructura de datos.",
+    "ref": "Date, 2004"
+  },
+  {
+    "term": "Esquema físico",
+    "desc": "Forma en que se almacenan los datos en el hardware.",
+    "ref": "Elmasri & Navathe, 2016"
+  },
+  {
+    "term": "ETL (Extract, Transform, Load)",
+    "desc": "Proceso de extracción, transformación y carga de datos.",
+    "ref": "Inmon, 2005"
+  },
+  {
+    "term": "Exportación de datos",
+    "desc": "Transferencia de datos a otro formato o sistema.",
+    "ref": "Connolly & Begg, 2015"
+  },
+  {
+    "term": "Extracción de datos",
+    "desc": "Proceso de recuperar datos de diferentes fuentes.",
+    "ref": "Silberschatz et al., 2020"
+  },  
+  {
     "term": "Filtrado de datos",
     "desc": "Selección de datos según criterios específicos.",
     "ref": "Coronel & Morris, 2019"
