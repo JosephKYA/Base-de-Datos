@@ -255,11 +255,6 @@
     "ref": "Coronel & Morris, 2019"
   },
   {
-    "term": "Foreign key (clave foránea)",
-    "desc": "Relación de integridad entre tablas.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
     "term": "Formularios",
     "desc": "Interfaces para capturar y mostrar datos.",
     "ref": "Connolly & Begg, 2015"
