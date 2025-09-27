@@ -26,6 +26,10 @@
       text-align:center;
       padding:20px;
     }
+    .content p{
+      padding: 0;
+      margin: 2px;
+    }
     .wrapper{
       max-width:800px;
       padding:40px;
@@ -33,13 +37,35 @@
       border-radius:var(--radius);
       box-shadow:0 8px 24px rgba(0,0,0,0.4);
     }
-    .logo{
-      width:80px;height:80px;
-      border-radius:18px;
-      margin:0 auto 20px;
-      background:linear-gradient(135deg,var(--accent),#06b6d4);
-      display:grid;place-items:center;
-      font-weight:800;font-size:28px;color:white;
+    .top-logos{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      margin-bottom:40px;
+    }
+    
+    .top-logos img{
+      width:80px;  
+      height:80px;     
+      object-fit:contain; 
+      border-radius:12px;  
+      background:#ffffff;  
+    }
+
+    .top-logos img.uac {
+      width:150px;
+      height:70px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+    
+
+    @media (max-width:500px){
+      .top-logos img{
+        width:60px;
+        height:60px;
+      }
     }
     h1{font-size:28px;margin-bottom:12px}
     p{color:var(--muted);margin-bottom:24px;font-size:16px}
@@ -57,28 +83,33 @@
       transform:translateY(-2px);
       box-shadow:0 6px 16px rgba(0,0,0,0.4);
     }
-    .content{
-      margin:30px 0;
-      padding:20px;
-      border:1px dashed rgba(255,255,255,0.08);
-      border-radius:12px;
-      font-size:15px;
-      color:var(--muted);
-    }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <div class="logo">P</div>
-    <h1>Bienvenido a mi Portafolio</h1>
-    <p>Explora mis proyectos y recursos disponibles.</p>
-
-    <div class="content">
-      <!-- Aquí puedes agregar el contenido de tu portafolio -->
-      <p>Espacio reservado para la presentación de tu portafolio.</p>
+    <div class="top-logos">
+      <img src="image-removebg-preview.png" alt="Logo 1">
+      <img class="uac" src="UACAM-1200x1200.png" alt="Logo 1">
+      <img src="image-removebg-ING.png" alt="Logo 2">
     </div>
 
+    <h1>Bienvenido a mi Portafolio</h1>
+    <p>Bases de Datos I</p>
+    <p>Integrantes del Equipo:</p>
+
+    <div class="content">
+      <p>Bautista Chan Leonardo</p>
+      <p>Berron Cornelio Leonardo</p>
+      <p>Chi Vazquez Joseph</p>
+      <p>Medina Chi Emiliano</p>
+      <p>Moo Tuz Luis</p>
+      <p>Novelo Rodriguez Pedro</p>
+      <p>Rivero Olivares Ángel</p>
+    </div>
+    <br>
+
     <a href="glosario.html" class="btn">Ir al Glosario</a>
+    
   </div>
 </body>
 </html>

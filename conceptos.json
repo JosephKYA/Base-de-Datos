@@ -678,5 +678,115 @@
     "term": "Control de concurrencia",
     "desc": "Técnicas para evitar inconsistencias por accesos simultáneos.",
     "ref": "Coronel & Morris, 2019"
+  },
+    {
+    "term": "Redundancia",
+    "desc": "La redundancia de datos ocurre cuando se almacenan múltiples copias del mismo dato en diferentes lugares, lo que puede provocar inconsistencia si no se controlan.",
+    "ref": "IBM. (2024a). Data redundancy. IBM Think. https://www.ibm.com/es-es/think/topics/data-redundancy"
+  },
+  {
+    "term": "Aislamiento",
+    "desc": "El aislamiento asegura que las transacciones concurrentes se ejecuten de manera independiente, evitando que una transacción vea los efectos intermedios de otra.",
+    "ref": "Wikipedia. (2024a). Aislamiento (ACID). En Wikipedia. https://es.wikipedia.org/wiki/Aislamiento_(ACID)"
+  },
+  {
+    "term": "Inconsistencia",
+    "desc": "La inconsistencia ocurre cuando los datos no cumplen con las reglas de integridad, por ejemplo, cuando dos copias redundantes no coinciden o contienen valores contradictorios.",
+    "ref": "IBM. (2024a). Data redundancy. IBM Think. https://www.ibm.com/es-es/think/topics/data-redundancy"
+  },
+  {
+    "term": "Integridad",
+    "desc": "La integridad de los datos se refiere a su corrección, coherencia y validez, asegurada mediante reglas como integridad de entidad, dominio y referencial.",
+    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
+  },
+  {
+    "term": "Seguridad",
+    "desc": "La seguridad en bases de datos protege los datos contra accesos no autorizados, incluye mecanismos como roles, permisos, auditoría y cifrado.",
+    "ref": "IONOS. (2024). Sistema gestor de base de datos (SGBD): definición y funciones. IONOS Digital Guide. https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd"
+  },
+  {
+    "term": "Atomicidad",
+    "desc": "La atomicidad garantiza que una transacción se ejecute completamente o no se ejecute en absoluto ('todo o nada').",
+    "ref": "DataCamp. (2023). Atomicity in Databases: All or Nothing Transactions. https://www.datacamp.com/es/tutorial/atomicity"
+  },
+  {
+    "term": "Consistencia",
+    "desc": "La consistencia asegura que cada transacción lleve a la base de datos de un estado válido a otro válido, respetando restricciones y reglas.",
+    "ref": "KeepCoding. (2023). ¿Qué es ACID en bases de datos?. KeepCoding Blog. https://keepcoding.io/blog/que-es-acid-bases-datos"
+  },
+  {
+    "term": "Durabilidad",
+    "desc": "La durabilidad garantiza que los cambios de una transacción confirmada persistan incluso en caso de fallos del sistema.",
+    "ref": "BMC. (2021). ACID: Atomic, consistent, isolated, durable. BMC Blogs. https://www.bmc.com/blogs/acid-atomic-consistent-isolated-durable"
+  },
+  {
+    "term": "DBA (Administrador de base de datos)",
+    "desc": "El DBA es el profesional encargado de la administración, seguridad, rendimiento y disponibilidad de las bases de datos.",
+    "ref": "IONOS. (2024). Sistema gestor de base de datos (SGBD): definición y funciones. IONOS Digital Guide. https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd"
+  },
+  {
+    "term": "Dato",
+    "desc": "Un dato es un valor elemental sin contexto, como '25' o 'Juan Pérez'.",
+    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
+  },
+  {
+    "term": "Información",
+    "desc": "La información es el resultado de procesar y organizar los datos para que tengan significado.",
+    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
+  },
+  {
+    "term": "SGBD",
+    "desc": "Es un software que permite crear, administrar y proteger bases de datos, facilitando el acceso a los usuarios y aplicaciones.",
+    "ref": "IONOS. (2024). Sistema gestor de base de datos (SGBD): definición y funciones. IONOS Digital Guide. https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd"
+  },
+  {
+    "term": "Entidades",
+    "desc": "Son objetos o conceptos del mundo real sobre los que se desea almacenar información en la base de datos.",
+    "ref": "Quizlet. (2024). Los sistemas de gestión de bases de datos (SGBD) y el modelo de referencia de ANSI. https://quizlet.com/es/721081760/los-sistemas-de-gestion-de-bases-de-datos-sgbd-el-modelo-de-referencia-de-ansi-flash-cards"
+  },
+  {
+    "term": "Atributos",
+    "desc": "Son las características que describen a una entidad, como 'nombre' o 'dirección' en la entidad Cliente.",
+    "ref": "Quizlet. (2024). Los sistemas de gestión de bases de datos (SGBD) y el modelo de referencia de ANSI. https://quizlet.com/es/721081760/los-sistemas-de-gestion-de-bases-de-datos-sgbd-el-modelo-de-referencia-de-ansi-flash-cards"
+  },
+  {
+    "term": "Relaciones",
+    "desc": "Son asociaciones entre entidades, por ejemplo, un Cliente realiza Facturas.",
+    "ref": "Quizlet. (2024). Los sistemas de gestión de bases de datos (SGBD) y el modelo de referencia de ANSI. https://quizlet.com/es/721081760/los-sistemas-de-gestion-de-bases-de-datos-sgbd-el-modelo-de-referencia-de-ansi-flash-cards"
+  },
+  {
+    "term": "Llave primaria",
+    "desc": "Es el atributo que identifica de manera única a cada registro de una tabla, sin repetidos ni valores nulos.",
+    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
+  },
+  {
+    "term": "Llave foránea",
+    "desc": "Es un atributo que enlaza una tabla con otra, refiriéndose a la llave primaria de la tabla relacionada (integridad referencial).",
+    "ref": "Wikipedia. (2024b). Integridad referencial. En Wikipedia. https://es.wikipedia.org/wiki/Integridad_referencial"
+  },
+  {
+    "term": "Cardinalidad",
+    "desc": "Indica cuántas instancias de una entidad pueden asociarse con otra: uno a uno, uno a muchos o muchos a muchos.",
+    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
+  },
+  {
+    "term": "Regla de integridad de entidad",
+    "desc": "Obliga a que cada entidad tenga una clave primaria que identifique de manera única sus instancias.",
+    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
+  },
+  {
+    "term": "Regla de integridad de dominio",
+    "desc": "Exige que los valores de un atributo pertenezcan a un dominio permitido (tipo de dato, rango o formato válido).",
+    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
+  },
+  {
+    "term": "Regla de integridad referencial",
+    "desc": "Garantiza que una clave foránea siempre corresponda a un valor existente en la tabla referenciada.",
+    "ref": "Wikipedia. (2024b). Integridad referencial. En Wikipedia. https://es.wikipedia.org/wiki/Integridad_referencial"
+  },
+  {
+    "term": "DBMS",
+    "desc": "Es la sigla en inglés para Sistema Gestor de Bases de Datos (SGBD). Cumple las mismas funciones de administración, integridad y seguridad de datos.",
+    "ref": "IONOS. (2024). Sistema gestor de base de datos (SGBD): definición y funciones. IONOS Digital Guide. https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd"
   }
 ]

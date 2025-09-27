@@ -1,5 +1,3 @@
-/* responsive.css */
-/* Ajustes exclusivos para móviles */
 @media (max-width: 600px) {
   body {
     padding: 16px;

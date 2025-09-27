@@ -98,7 +98,7 @@
     let glossaryData = [];
 
     async function loadData() {
-      const res = await fetch("conceptos.json"); // carga el archivo externo
+      const res = await fetch("conceptos.json");
       glossaryData = await res.json();
       renderLetters();
       renderList(glossaryData);
