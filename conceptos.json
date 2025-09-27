@@ -120,11 +120,6 @@
     "ref": "Elmasri & Navathe, 2016"
   },
   {
-    "term": "Clave foránea",
-    "desc": "Atributo que referencia a otra tabla.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
     "term": "Cliente-servidor",
     "desc": "Arquitectura en la que un cliente consulta a un servidor.",
     "ref": "Connolly & Begg, 2015"
