@@ -1,683 +1,433 @@
 [
   {
     "term": "Acceso concurrente",
-    "desc": "Capacidad de permitir que varios usuarios accedan y modifiquen la base de datos al mismo tiempo sin conflictos.",
-    "ref": "Connolly & Begg, 2015"
+    "desc": "El acceso concurrente a la base de datos se refiere a la situación en la que se accede a la base de datos desde más de una conexión (usuario) a la vez.",
+    "ref": "Raima Inc. (2020). Concurrent Database Access. En Raima Database Manager SQL User Guide (vers. 14.2). Recuperado de https://docs.raima.com/rdm/14_2/ug/sql/ConcurrentDbAccess.htm"
   },
   {
     "term": "Acceso directo",
-    "desc": "Recuperación de datos sin necesidad de recorrer secuencialmente la memoria.",
-    "ref": "Silberschatz, Korth, & Sudarshan, 2020"
+    "desc": "Permite el acceso directo al registro que nos interesa, pudiendo saltar de uno a otro sin necesidad de recorrer los anteriores.",
+    "ref": "Medrano, A. (s. f.). Introducción a las bases de datos [Página web]. Recuperado de https://aitor-medrano.github.io/bd/01intro.html"
   },
   {
     "term": "Acceso secuencial",
-    "desc": "Lectura de datos en el mismo orden en que fueron almacenados.",
-    "ref": "Elmasri & Navathe, 2016"
+    "desc": "Los registros se almacenan uno detrás de otro. Antiguamente se utilizaba cuando los ficheros se persistían mediante cintas magnéticas, y provocaba que para acceder a un registro, era necesario recorrer todos los anteriores.",
+    "ref": "Medrano, A. (s. f.). Introducción a las bases de datos [Página web]. Recuperado de https://aitor-medrano.github.io/bd/01intro.html"
   },
   {
     "term": "ACID",
-    "desc": "Propiedades de Atomicidad, Consistencia, Aislamiento y Durabilidad en las transacciones.",
-    "ref": "Coronel & Morris, 2019"
+    "desc": "Es una referencia a las 4 principales propiedades o características que tiene una transacción en bases de datos. Comúnmente también se le define como una característica de la misma base de datos dada su estrecha relación entre transacciones y bases de datos.",
+    "ref": "Martínez, G. A. (2023, 6 diciembre). ¿Qué es ACID en Bases de datos? Brave Developer. https://bravedeveloper.com/2023/12/06/que-es-acid-en-bases-de-datos/"
   },
   {
     "term": "Agregación",
-    "desc": "Operación que resume un conjunto de valores (ej. suma, promedio).",
-    "ref": "Date, 2004"
+    "desc": "La agregación de datos es el proceso mediante el cual se recopilan datos sin procesar y se expresan en forma de resumen para el análisis estadístico.",
+    "ref": "IBM. (2025). Data aggregation. En IBM Tivoli Netcool Performance Manager 1.4.2 documentation. Recuperado de https://www.ibm.com/docs/en/tnpm/1.4.2?topic=data-aggregation"
   },
   {
-    "term": "Álgebra relacional",
-    "desc": "Conjunto formal de operaciones aplicables a bases de datos relacionales.",
-    "ref": "Elmasri & Navathe, 2016"
+    "term": "Alta concurrencia",
+    "desc": "La alta concurrencia de bases de datos se refiere a la capacidad de un sistema de bases de datos para gestionar múltiples operaciones simultáneamente.",
+    "ref": "CelerData, Inc. (2024, 9 de agosto). Database concurrency. Recuperado de https://celerdata.com/glossary/database-concurrency"
   },
   {
-    "term": "Análisis de consultas",
-    "desc": "Evaluación del rendimiento y optimización de consultas SQL.",
-    "ref": "Connolly & Begg, 2015"
+    "term": "Alta disponibilidad",
+    "desc": "La alta disponibilidad es la capacidad de un sistema o servicio de continuar funcionando o de seguir estando disponible cuando se produce un fallo o una interrupción.",
+    "ref": "Content Studio. (2023, 24 febrero). ¿Qué es la Alta disponibilidad de MySQL? Pure Storage. https://www.purestorage.com/es/knowledge/what-is-mysql-high-availability.html"
   },
   {
     "term": "Anonimización de datos",
-    "desc": "Proceso de eliminar información identificable de registros.",
-    "ref": "Coronel & Morris, 2019"
+    "desc": "La anonimización de datos se refiere al proceso de modificar un conjunto de datos de forma que resulte imposible",
+    "ref": "DataCamp. (1 de octubre de 2024). ¿Qué es la anonimización de datos? Explicación de técnicas, herramientas y buenas prácticas. Recuperado de https://www.datacamp.com/es/blog/what-is-data-anonymization"
+  },
+  {
+    "term": "Análisis de cardinalidad",
+    "desc": "Se utiliza para identificar restricciones concretar de exclusividad o constancia que existen en los valores de datos reales.",
+    "ref": "IBM. (s. f.). Análisis de cardinalidad. En IBM InfoSphere Information Server version 11.5.0. Recuperado de https://www.ibm.com/docs/es/iis/11.5.0?topic=overview-cardinality-analysis"
+  },
+  {
+    "term": "Análisis de consultas",
+    "desc": "Determina cómo ajustar la consulta para obtener un rendimiento óptimo.",
+    "ref": "IBM. (s. f.). Federation: Análisis de consultas. En IBM Db2 version 11.1.0 Documentation. Recuperado de https://www.ibm.com/docs/es/db2/11.1.0?topic=SSEPGG_11.1.0/com.ibm.swg.im.iis.fed.tuning.doc/topics/cfptun04.htm"
   },
   {
     "term": "API de base de datos",
-    "desc": "Interfaz de programación que permite interacción con el SGBD.",
-    "ref": "Silberschatz et al., 2020"
+    "desc": "Una API de base de datos comprende herramientas y protocolos que permiten que las aplicaciones interactúen con un DBMS. ",
+    "ref": "Khan, U. H. (2024, 4 julio). Database API: What Is It & How Is It Used? A Thorough Guide. Astera. https://www.astera.com/es/type/blog/database-api/"
+  },
+  {
+    "term": "Arquitectura ANSI/SPARC",
+    "desc": "Arquitectura de tres niveles (externo, conceptual e interno) que separa vistas de usuario, estructura lógica y almacenamiento físico, garantizando independencia lógica y física de los datos.",
+    "ref": "Arciniega, F. (s. f.). Modelo ANSI-SPARC / ANSI-PARK: arquitectura de 3 niveles en bases de datos. Recuperado de https://fernandoarciniega.com/modelo-ansi-sparc-ansi-park-arquitectura-de-3-niveles-bases-de-datos/"
+  },
+  {
+    "term": "Atributos",
+    "desc": "Son las características que describen a una entidad, como 'nombre' o 'dirección' en la entidad Cliente.",
+    "ref": "BASES DE DATOS-MIS 308 TEMA 3 FINAL-X.doc; Quizlet. (2024). Los sistemas de gestión de bases de datos (SGBD) y el modelo de referencia de ANSI. https://quizlet.com/es/721081760/los-sistemas-de-gestion-de-bases-de-datos-sgbd-el-modelo-de-referencia-de-ansi-flash-cards"
+  },
+  {
+    "term": "Atributo simple",
+    "desc": "Atributo que no se puede descomponer más; almacena un valor por entidad.",
+    "ref": "Informáticos Sin Límites. (s. f.). Atributos en bases de datos. Informáticos Sin Límites. Recuperado de https://informaticosinlimites.com/base-de-datos/atributos/"
+  },
+  {
+    "term": "Atributo multivaluado",
+    "desc": "Atributo que puede tener más de un valor para una misma entidad (por ejemplo, varios números de teléfono para un cliente).",
+    "ref": "Informáticos Sin Límites. (s. f.). Atributos en bases de datos. Informáticos Sin Límites. Recuperado de https://informaticosinlimites.com/base-de-datos/atributos/"
+  },
+  {
+    "term": "Atributo compuesto",
+    "desc": "Atributo que se puede descomponer en subatributos (por ejemplo, una dirección que incluye calle, ciudad, estado).",
+    "ref": "Informáticos Sin Límites. (s. f.). Atributos en bases de datos. Informáticos Sin Límites. Recuperado de https://informaticosinlimites.com/base-de-datos/atributos/"
+  },
+  {
+    "term": "Atributo derivado",
+    "desc": "Atributo cuyo valor se obtiene (deriva) de otros atributos o cálculos (por ejemplo, edad calculada a partir de fecha de nacimiento).",
+    "ref": "Informáticos Sin Límites. (s. f.). Atributos en bases de datos. Informáticos Sin Límites. Recuperado de https://informaticosinlimites.com/base-de-datos/atributos/"
   },
   {
     "term": "Autenticación",
-    "desc": "Validación de la identidad de un usuario para acceder a los datos.",
-    "ref": "Connolly & Begg, 2015"
+    "desc": "La autenticación se utiliza para comprobar que las personas y entidades son quienes dicen ser antes de proporcionarles acceso a redes y recursos digitales.",
+    "ref": "Microsoft. (s. f.). ¿Qué es la autenticación?. Microsoft Security. Recuperado de https://www.microsoft.com/es-es/security/business/security-101/what-is-authentication"
   },
   {
     "term": "Backup",
-    "desc": "Copia de seguridad de datos almacenados en la base de datos.",
-    "ref": "Coronel & Morris, 2019"
+    "desc": "Copias de datos que se pueden utilizar para proteger a las organizaciones frente a pérdidas de datos.",
+    "ref": "NetApp. (s. f.). ¿Qué es el backup y la recuperación de datos? Recuperado de https://www.netapp.com/es/cyber-resilience/what-is-backup-recovery/"
   },
   {
-    "term": "Balanceo de carga",
-    "desc": "Distribución de consultas entre varios servidores para mejorar eficiencia.",
-    "ref": "Silberschatz et al., 2020"
+    "term": "Base de datos (BD)",
+    "desc": "Una base de datos es una recopilación organizada de información o datos estructurados. Ejemplo: El sistema de clientes de un banco que guarda datos como nombre, número de cuenta y saldo en tablas relacionadas.",
+    "ref": "Oracle. (2020, 24 de noviembre). ¿Qué es una base de datos? Recuperado de https://www.oracle.com/mx/database/what-is-database/"
   },
   {
-    "term": "Base de datos activa",
-    "desc": "Responde automáticamente a eventos mediante disparadores.",
-    "ref": "Date, 2004"
+    "term": "Modelo Jerarquico",
+    "desc": "Organiza los datos en forma de árbol con relaciones padre-hijo, donde cada hijo solo puede tener un padre. Ejemplo: Un departamento (padre) que contiene empleados (hijos).",
+    "ref": "López Montalbán, I., & de Castro Vázquez, M. (2014). Gestión de bases de datos (2.ª ed.). IBERGARCETA Publicaciones, S.L. ISBN: 978-84-1545-294-2."
   },
   {
-    "term": "Base de datos centralizada",
-    "desc": "Los datos se almacenan en un único servidor.",
-    "ref": "Connolly & Begg, 2015"
+    "term": "Modelo en red",
+    "desc": "Representa los datos en forma de grafo, lo que permite múltiples relaciones entre registros. Un alumno que cursa varias materias y una materia que tiene varios alumnos.",
+    "ref": "López Montalbán, I., & de Castro Vázquez, M. (2014). Gestión de bases de datos (2.ª ed.). IBERGARCETA Publicaciones, S.L. ISBN: 978-84-1545-294-2."
   },
   {
-    "term": "Base de datos distribuida",
-    "desc": "Los datos están repartidos en varias ubicaciones físicas.",
-    "ref": "Elmasri & Navathe, 2016"
+    "term": "Modelo relacional",
+    "desc": "Organiza los datos en tablas relacionadas mediante claves. Ejemplo: Una tabla Clientes relacionada con la tabla Pedidos a través de ID_Cliente.",
+    "ref": "López Montalbán, I., & de Castro Vázquez, M. (2014). Gestión de bases de datos (2.ª ed.). IBERGARCETA Publicaciones, S.L. ISBN: 978-84-1545-294-2."
   },
   {
-    "term": "Base de datos federada",
-    "desc": "Integración de múltiples bases de datos independientes.",
-    "ref": "Coronel & Morris, 2019"
+    "term": "Base de datos distribuidas",
+    "desc": "Almacenan la información en múltiples nodos interconectados mediante una red. Ejemplo: Un banco con sucursales en varias ciudades que comparten información de clientes.",
+    "ref": "López Montalbán, I., & de Castro Vázquez, M. (2014). Gestión de bases de datos (2.ª ed.). IBERGARCETA Publicaciones, S.L. ISBN: 978-84-1545-294-2."
   },
   {
-    "term": "Base de datos jerárquica",
-    "desc": "Organización en árbol, con relaciones padre-hijo.",
-    "ref": "Date, 2004"
+    "term": "Base de datos orientada a objetos",
+    "desc": "Permiten almacenar no solo datos, sino también comportamientos y métodos de los objetos. Ejemplo: Un objeto Auto que almacena atributos (Color, Modelo) y métodos (Acelerar(), Frenar()).",
+    "ref": "López Montalbán, I., & de Castro Vázquez, M. (2014). Gestión de bases de datos (2.ª ed.). IBERGARCETA Publicaciones, S.L. ISBN: 978-84-1545-294-2."
   },
   {
-    "term": "Base de datos en memoria",
-    "desc": "Sistema que guarda datos directamente en RAM.",
-    "ref": "Connolly & Begg, 2015"
+    "term": "Bases de Datos Multidimensionales",
+    "desc": "Organizan los datos en estructuras multidimensionales, útiles para análisis en sistemas OLAP. Ejemplo: Un cubo de ventas con las dimensiones producto, tiempo y región.",
+    "ref": "López Montalbán, I., & de Castro Vázquez, M. (2014). Gestión de bases de datos (2.ª ed.). IBERGARCETA Publicaciones, S.L. ISBN: 978-84-1545-294-2."
   },
   {
-    "term": "Base de datos NoSQL",
-    "desc": "Sistema que no utiliza el modelo relacional.",
-    "ref": "Coronel & Morris, 2019"
+    "term": "Bloqueo (Locking)",
+    "desc": "Un bloqueo en un objeto impide que se confirmen las transacciones hasta que se quita el bloqueo.",
+    "ref": "Microsoft. (2025, 6 de junio). Bloquear y desbloquear bases de datos (XMLA). En Documentación de SQL Server Analysis Services 2025. Recuperado de https://learn.microsoft.com/es-es/analysis-services/multidimensional-models-scripting-language-assl-xmla/locking-and-unlocking-databases-xmla?view=sql-analysis-services-2025"
   },
   {
-    "term": "Base de datos relacional",
-    "desc": "Sistema basado en tablas con relaciones entre ellas.",
-    "ref": "Elmasri & Navathe, 2016"
+    "term": "Bloqueo compartido",
+    "desc": "Un bloqueo compartido significa que varias transacciones pueden tener el mismo bloqueo simultáneamente.",
+    "ref": "Muzammil, U. (s. f.). Shared vs exclusive transaction locks. En Neo4j Knowledge Base. Recuperado de https://neo4j.com/developer/kb/shared-vs-exclusive-transaction-locks/"
+  },
+  {
+    "term": "Bloqueo exclusivo",
+    "desc": "Solo una transacción puede tener el bloqueo a la vez. Por lo tanto, son exclusivos.",
+    "ref": "Muzammil, U. (s. f.). Shared vs exclusive transaction locks. En Neo4j Knowledge Base. Recuperado de https://neo4j.com/developer/kb/shared-vs-exclusive-transaction-locks/"
+  },
+  {
+    "term": "Boyce-Codd Normal Form (BCNF)",
+    "desc": "Variante estricta de la tercera forma normal. Se utiliza para reducir la redundancia en bases de datos.",
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning., C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning."
   },
   {
     "term": "Cache de consultas",
     "desc": "Almacenamiento temporal de resultados de consultas.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Cardinalidad",
-    "desc": "Número de elementos en un conjunto o relación.",
-    "ref": "Date, 2004"
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill., A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill."
   },
   {
     "term": "Campo",
-    "desc": "Unidad de información en un registro.",
-    "ref": "Connolly & Begg, 2015"
+    "desc": "Un campo es un solo elemento de datos contenido en una columna dentro de una base de datos.",
+    "ref": "García, F. (2023, 8 octubre). Un campo es un solo elemento de datos contenido en una columna Leer más. https://codigosql.top/bases-de-datos/campo/"
   },
   {
-    "term": "Clave primaria",
-    "desc": "Identificador único de un registro.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Cliente-servidor",
-    "desc": "Arquitectura en la que un cliente consulta a un servidor.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Cluster de base de datos",
-    "desc": "Grupo de servidores que funcionan como un solo sistema.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Código SQL",
-    "desc": "Lenguaje para manejar bases de datos relacionales.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Columna",
-    "desc": "Conjunto de valores de un mismo tipo en una tabla.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Consulta",
-    "desc": "Petición de datos al sistema gestor.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Dato",
-    "desc": "Unidad mínima de información.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Data mart",
-    "desc": "Subconjunto de un data warehouse orientado a un área específica.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Data mining",
-    "desc": "Descubrimiento de patrones en grandes volúmenes de datos.",
-    "ref": "Han, Kamber, & Pei, 2011"
-  },
-  {
-    "term": "Data warehouse",
-    "desc": "Almacén centralizado para análisis de datos históricos.",
-    "ref": "Inmon, 2005"
-  },
-  {
-    "term": "DBA",
-    "desc": "Administrador de base de datos encargado de su gestión.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "DDL",
-    "desc": "Lenguaje para definir estructuras de base de datos.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "DML",
-    "desc": "Lenguaje para manipular datos dentro de una base de datos.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Dominio",
-    "desc": "Conjunto de valores válidos de un atributo.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Denormalización",
-    "desc": "Reducción de la normalización para mejorar rendimiento.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Dependencia funcional",
-    "desc": "Relación en la que un atributo depende de otro.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Entidad",
-    "desc": "Objeto o concepto del mundo real representado en una base de datos.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Entidad débil",
-    "desc": "Entidad que depende de otra para existir.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Entidad fuerte",
-    "desc": "Entidad que tiene existencia propia.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Escalabilidad",
-    "desc": "Capacidad del sistema para crecer en carga de trabajo.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Esquema",
-    "desc": "Estructura que define cómo se organiza la base de datos.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Esquema lógico",
-    "desc": "Representación abstracta de la estructura de datos.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Esquema físico",
-    "desc": "Forma en que se almacenan los datos en el hardware.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "ETL (Extract, Transform, Load)",
-    "desc": "Proceso de extracción, transformación y carga de datos.",
-    "ref": "Inmon, 2005"
-  },
-  {
-    "term": "Exportación de datos",
-    "desc": "Transferencia de datos a otro formato o sistema.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Extracción de datos",
-    "desc": "Proceso de recuperar datos de diferentes fuentes.",
-    "ref": "Silberschatz et al., 2020"
-  },  
-  {
-    "term": "Filtrado de datos",
-    "desc": "Selección de datos según criterios específicos.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Formularios",
-    "desc": "Interfaces para capturar y mostrar datos.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Fragmentación",
-    "desc": "División de una base de datos en partes distribuidas.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Función agregada",
-    "desc": "Función que combina múltiples valores (ej. MAX, SUM).",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Función hash",
-    "desc": "Algoritmo que transforma datos en un valor único.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Funciones almacenadas",
-    "desc": "Conjunto de instrucciones SQL guardadas en el servidor.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Formato de registro",
-    "desc": "Estructura de cómo se organizan los campos.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Frecuencia de acceso",
-    "desc": "Medida de cuántas veces se consulta un dato.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Full-text search",
-    "desc": "Búsqueda en texto completo dentro de una base de datos.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Gestor de base de datos (DBMS)",
-    "desc": "Software que administra bases de datos.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Granularidad",
-    "desc": "Nivel de detalle de los datos.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Grupo de registros",
-    "desc": "Conjunto de registros relacionados.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Graficación de datos",
-    "desc": "Representación visual de los datos.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Grafos de dependencia",
-    "desc": "Representación de cómo dependen los datos entre sí.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Grid computing",
-    "desc": "Uso de múltiples recursos distribuidos para procesamiento de datos.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Gestión de usuarios",
-    "desc": "Control de permisos de acceso.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Garantía de consistencia",
-    "desc": "Cumplimiento de reglas de integridad.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Gateway de datos",
-    "desc": "Interfaz que conecta distintos sistemas de datos.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Gran volumen de datos (Big Data)",
-    "desc": "Conjuntos de datos extremadamente grandes.",
-    "ref": "Han et al., 2011"
-  },
-  {
-    "term": "Índice",
-    "desc": "Estructura que mejora la velocidad de acceso a los datos en una tabla.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Índice compuesto",
-    "desc": "Índice basado en más de un atributo para mejorar las búsquedas.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Índice hash",
-    "desc": "Técnica que localiza registros a través de valores de función hash.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Índice B-Tree",
-    "desc": "Estructura de árbol balanceado usada para indexación.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Integridad referencial",
-    "desc": "Restricción que asegura coherencia entre tablas relacionadas.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Integridad de entidad",
-    "desc": "Garantía de que cada fila en una tabla es única y no nula.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Normalización",
-    "desc": "Proceso de organizar los datos para reducir redundancia.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Primera forma normal (1FN)",
-    "desc": "Eliminación de atributos multivalorados en una tabla.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Segunda forma normal (2FN)",
-    "desc": "Eliminación de dependencias parciales en una tabla.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Tercera forma normal (3FN)",
-    "desc": "Eliminación de dependencias transitivas.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Boyce-Codd Normal Form (BCNF)",
-    "desc": "Variante estricta de la tercera forma normal.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Cuarta forma normal (4FN)",
-    "desc": "Elimina dependencias multivaluadas.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Quinta forma normal (5FN)",
-    "desc": "Reduce redundancias a través de descomposición de tablas.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Vista",
-    "desc": "Tabla virtual creada a partir de una consulta.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Vista materializada",
-    "desc": "Vista almacenada físicamente en la base de datos.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Join",
-    "desc": "Operación que combina datos de dos o más tablas.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Inner Join",
-    "desc": "Combina filas con coincidencias en ambas tablas.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Outer Join",
-    "desc": "Incluye filas sin coincidencias en al menos una tabla.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Left Join",
-    "desc": "Devuelve todas las filas de la tabla izquierda y las coincidentes de la derecha.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Right Join",
-    "desc": "Devuelve todas las filas de la tabla derecha y las coincidentes de la izquierda.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Full Join",
-    "desc": "Une todas las filas, coincidan o no.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Cross Join",
-    "desc": "Devuelve el producto cartesiano de dos tablas.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Subconsulta",
-    "desc": "Consulta anidada dentro de otra.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Trigger (disparador)",
-    "desc": "Procedimiento que se ejecuta automáticamente ante un evento.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Cursor",
-    "desc": "Recurso que permite recorrer resultados fila por fila.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Transacción",
-    "desc": "Unidad lógica de trabajo en una base de datos.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Commit",
-    "desc": "Confirmación de los cambios realizados en una transacción.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Rollback",
-    "desc": "Reversión de los cambios realizados en una transacción.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Savepoint",
-    "desc": "Marca intermedia dentro de una transacción para posibles retrocesos.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Deadlock (interbloqueo)",
-    "desc": "Situación donde dos transacciones esperan indefinidamente recursos.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Bloqueo (Locking)",
-    "desc": "Mecanismo para controlar acceso concurrente.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Bloqueo compartido",
-    "desc": "Permite lecturas simultáneas pero no escrituras.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Bloqueo exclusivo",
-    "desc": "Permite escritura bloqueando a otros accesos.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Serialización",
-    "desc": "Ejecución de transacciones como si fueran secuenciales.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Planificador de transacciones",
-    "desc": "Módulo que ordena transacciones para evitar conflictos.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Optimización de consultas",
-    "desc": "Proceso de mejorar la eficiencia en consultas SQL.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Plan de ejecución",
-    "desc": "Estrategia que sigue el SGBD para resolver una consulta.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Particionamiento",
-    "desc": "División de tablas grandes en fragmentos más manejables.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Particionamiento horizontal",
-    "desc": "División de filas en varias tablas.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Particionamiento vertical",
-    "desc": "División de columnas en varias tablas.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Replica de datos",
-    "desc": "Copia de datos en diferentes servidores para disponibilidad.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Alta disponibilidad",
-    "desc": "Capacidad de mantener acceso a los datos incluso ante fallos.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Escalabilidad vertical",
-    "desc": "Mejora del rendimiento añadiendo recursos a un servidor.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Escalabilidad horizontal",
-    "desc": "Mejora añadiendo múltiples servidores.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Balanced tree",
-    "desc": "Árbol usado en índices para mejorar acceso a datos.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "OLTP (Online Transaction Processing)",
-    "desc": "Procesamiento en línea de transacciones operativas.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "OLAP (Online Analytical Processing)",
-    "desc": "Procesamiento de consultas analíticas y multidimensionales.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Modelo entidad-relación",
-    "desc": "Modelo conceptual para representar datos.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Diagrama ER",
-    "desc": "Representación gráfica del modelo entidad-relación.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Metadatos",
-    "desc": "Datos que describen otros datos.",
-    "ref": "Silberschatz et al., 2020"
+    "term": "Cardinalidad",
+    "desc": "Número de elementos en un conjunto o relación Indica cuántas instancias de una entidad pueden asociarse con otra: uno a uno, uno a muchos o muchos a muchos.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004; Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
   },
   {
     "term": "Catálogo del sistema",
     "desc": "Conjunto de metadatos gestionados por el SGBD.",
-    "ref": "Coronel & Morris, 2019"
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning., C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning."
   },
   {
-    "term": "Middleware",
-    "desc": "Software que conecta aplicaciones con bases de datos.",
-    "ref": "Connolly & Begg, 2015"
+    "term": "LLave primaria",
+    "desc": "Identificador único de un registro Es el atributo que identifica de manera única a cada registro de una tabla, sin repetidos ni valores nulos. Ejemplo: En una tabla Empleados, la columna ID_Empleado identifica de forma única a cada trabajador",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016; Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
   },
   {
-    "term": "SQL dinámico",
-    "desc": "Código SQL generado y ejecutado en tiempo de ejecución.",
-    "ref": "Elmasri & Navathe, 2016"
+    "term": "Cliente-servidor",
+    "desc": "Arquitectura en la que un cliente consulta a un servidor.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education., T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education."
   },
   {
-    "term": "SQL embebido",
-    "desc": "Instrucciones SQL incluidas dentro de programas host.",
-    "ref": "Date, 2004"
+    "term": "Cluster de base de datos",
+    "desc": "Grupo de servidores que funcionan como un solo sistema.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill., A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill."
   },
   {
-    "term": "Query tuning",
-    "desc": "Ajuste fino de consultas para mejorar su rendimiento.",
-    "ref": "Silberschatz et al., 2020"
+    "term": "Columna",
+    "desc": "Una columna es una lista de valores, generalmente pertenecientes a un campo específico, que se muestra verticalmente en una tabla.",
+    "ref": "Metabase. (s. f.). What is a column? Recuperado de https://www.metabase.com/glossary/column"
   },
   {
-    "term": "Análisis de cardinalidad",
-    "desc": "Estimación del número de resultados en operaciones.",
-    "ref": "Coronel & Morris, 2019"
+    "term": "Commit",
+    "desc": "Termina una unidad de trabajo y confirma los cambios de la base de datos que ha realizado esa unidad de trabajo.",
+    "ref": "IBM. (s. f.). Sentencia COMMIT (DB2 11.1). Recuperado de https://www.ibm.com/docs/es/db2/11.1.0?topic=statements-commit"
   },
   {
-    "term": "Planificador de consultas",
-    "desc": "Módulo que determina la estrategia de ejecución.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Sistema distribuido",
-    "desc": "Conjunto de bases de datos interconectadas en red.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Sharding",
-    "desc": "Estrategia de particionamiento de datos en servidores independientes.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Alta concurrencia",
-    "desc": "Capacidad de manejar múltiples transacciones simultáneamente.",
-    "ref": "Silberschatz et al., 2020"
-  },
-  {
-    "term": "Respaldo incremental",
-    "desc": "Copia de seguridad que almacena solo los cambios recientes.",
-    "ref": "Coronel & Morris, 2019"
-  },
-  {
-    "term": "Respaldo diferencial",
-    "desc": "Copia de seguridad que guarda cambios desde el último respaldo completo.",
-    "ref": "Connolly & Begg, 2015"
-  },
-  {
-    "term": "Recuperación ante desastres",
-    "desc": "Estrategias para restaurar datos tras fallos.",
-    "ref": "Elmasri & Navathe, 2016"
-  },
-  {
-    "term": "Auditoría de datos",
-    "desc": "Registro de operaciones realizadas sobre la base de datos.",
-    "ref": "Date, 2004"
-  },
-  {
-    "term": "Seguridad de datos",
-    "desc": "Conjunto de medidas para proteger información en el sistema.",
-    "ref": "Silberschatz et al., 2020"
+    "term": "Consulta",
+    "desc": "Realiza una tarea con los datos. Las consultas de acción se pueden usar para crear tablas nuevas, agregar datos a las tablas existentes, o actualizar o eliminar datos.",
+    "ref": "Microsoft. (s. f.). Conceptos básicos sobre bases de datos. En Soporte técnico de Microsoft. Recuperado de https://support.microsoft.com/es-es/topic/conceptos-b%C3%A1sicos-sobre-bases-de-datos-a849ac16-07c7-4a31-9948-3c8c94a7c204"
   },
   {
     "term": "Control de concurrencia",
     "desc": "Técnicas para evitar inconsistencias por accesos simultáneos.",
-    "ref": "Coronel & Morris, 2019"
-  },
-    {
-    "term": "Redundancia",
-    "desc": "La redundancia de datos ocurre cuando se almacenan múltiples copias del mismo dato en diferentes lugares, lo que puede provocar inconsistencia si no se controlan.",
-    "ref": "IBM. (2024a). Data redundancy. IBM Think. https://www.ibm.com/es-es/think/topics/data-redundancy"
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning., C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning."
   },
   {
-    "term": "Aislamiento",
-    "desc": "El aislamiento asegura que las transacciones concurrentes se ejecuten de manera independiente, evitando que una transacción vea los efectos intermedios de otra.",
-    "ref": "Wikipedia. (2024a). Aislamiento (ACID). En Wikipedia. https://es.wikipedia.org/wiki/Aislamiento_(ACID)"
+    "term": "Cross Join",
+    "desc": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "Cuarta forma normal (4FN)",
+    "desc": "La 4FN busca eliminar los problemas que nacen de malas relaciones, provenientes de las dependencias multivaluadas.",
+    "ref": "Informático Sin Límites. (28 de junio de 2022). Cuarta forma normal (4FN) bien explicada + ejemplos. Recuperado de https://informaticosinlimites.com/base-de-datos/4fn/"
+  },
+  {
+    "term": "Cursor",
+    "desc": "Recurso que permite recorrer resultados fila por fila.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill., A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill."
+  },
+  {
+    "term": "SQL",
+    "desc": "lenguaje de programación para almacenar y procesar información en una base de datos relacional.",
+    "ref": "Amazon Web Services, Inc. (s. f.). ¿Qué es SQL? - Explicación de lenguaje de consulta estructurada (SQL). Recuperado de https://aws.amazon.com/es/what-is/sql/"
+  },
+  {
+    "term": "Data mart",
+    "desc": "Subconjunto de un data warehouse orientado a un área específica.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill., A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill."
+  },
+  {
+    "term": "Data mining",
+    "desc": "Descubrimiento de patrones en grandes volúmenes de datos.",
+    "ref": "Han, J., Kamber, M., & Pei, J. (2011). Data mining: Concepts and techniques (3rd ed.). Morgan Kaufmann., J., Kamber, M., & Pei, J. (2011). Data mining: Concepts and techniques (3rd ed.). Morgan Kaufmann."
+  },
+  {
+    "term": "Data warehouse",
+    "desc": "Almacén centralizado para análisis de datos históricos.",
+    "ref": "Inmon, W. H. (2005). Building the data warehouse (4th ed.). Wiley., W. H. (2005). Building the data warehouse (4th ed.). Wiley."
+  },
+  {
+    "term": "Dato",
+    "desc": "El dato es un trozo de información concreta sobre algún concepto o suceso. Ejemplo: “1996” como año de nacimiento",
+    "ref": "López Montalbán, I., & de Castro Vázquez, M. (2014). Gestión de bases de datos (2.ª ed.). Madrid: IBERGARCETA Publicaciones, S.L. ISBN: 978-84-1545-294-2."
+  },
+  {
+    "term": "DBA",
+    "desc": "Un administrador de bases de datos, o DBA, es responsable del mantenimiento, la seguridad y el funcionamiento de las bases de datos.",
+    "ref": "Oracle. (2020, 29 de octubre). ¿Qué es un administrador de base de datos (DBA)? Recuperado de https://www.oracle.com/mx/database/what-is-a-dba"
+  },
+  {
+    "term": "DDL",
+    "desc": "Describe la parte de SQL que crea, altera y suprime objetos de base de datos.",
+    "ref": "IBM. (2025). Lenguaje de definición de datos (DDL). En IBM Docs – Db2 for i 7.5.0. Recuperado de https://www.ibm.com/docs/es/i/7.5.0?topic=programming-data-definition-language"
+  },
+  {
+    "term": "Deadlock (interbloqueo)",
+    "desc": "Situación donde dos transacciones esperan indefinidamente recursos.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill., A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill."
+  },
+  {
+    "term": "Denormalización",
+    "desc": "Reducción de la normalización para mejorar rendimiento.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education., T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education."
+  },
+  {
+    "term": "Dependencia funcional",
+    "desc": "Relación entre dos columnas de una tabla, donde el valor de una columna determina de forma única el valor de la otra para cualquier par de registros.",
+    "ref": "ScienceDirect. (s. f.). Functional Dependency. En ScienceDirect Topics. Recuperado de https://www.sciencedirect.com/topics/computer-science/functional-dependency"
+  },
+  {
+    "term": "Diccionario de datos",
+    "desc": "Un diccionario de datos mapea los elementos de datos, aclara las relaciones y garantiza una interpretación homogénea de las bases de datos.",
+    "ref": "Pure Storage. (2023, 23 de agosto). ¿Qué es un diccionario de datos?. Recuperado de https://www.purestorage.com/es/knowledge/what-is-a-data-dictionary.html"
+  },
+  {
+    "term": "DML",
+    "desc": "Se encargan de crear, modificar y eliminar objetos de la base de datos, como tablas, índices, vistas y esquemas.",
+    "ref": "DataCamp. (2024, 17 de mayo). SQL DML Commands: Mastering Data Manipulation in SQL. Recuperado de https://www.datacamp.com/tutorial/sql-dml-commands-mastering-data-manipulation-in-sql"
+  },
+  {
+    "term": "Dominio",
+    "desc": "Un dominio en una base de datos es un conjunto de valores que pueden tomar los atributos de una tabla.",
+    "ref": "CodigoSQL. (s. f.). ¿Qué es un dominio en base de datos? Tipos y ejemplos. Recuperado el 28 de septiembre de 2025, de https://codigosql.top/bases-de-datos/dominio/"
+  },
+  {
+    "term": "Entidad",
+    "desc": "Objeto o concepto del mundo real representado en una base de datos Son objetos o conceptos del mundo real sobre los que se desea almacenar información en la base de datos.",
+    "ref": "Quizlet. (2024). Los sistemas de gestión de bases de datos (SGBD) y el modelo de referencia de ANSI. https://quizlet.com/es/721081760/los-sistemas-de-gestion-de-bases-de-datos-sgbd-el-modelo-de-referencia-de-ansi-flash-cards"
+  },
+  {
+    "term": "Entidad débil",
+    "desc": "Entidad que depende de otra para existir. Ejemplo: Una entidad 'Pedido' que depende de la entidad 'Cliente' para su existencia.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education., T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education."
+  },
+  {
+    "term": "Entidad fuerte",
+    "desc": "Entidad que tiene existencia propia. Ejemplo: Una entidad 'Empleado' que puede existir independientemente de otras entidades.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education., T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education."
+  },
+  {
+    "term": "Escalabilidad",
+    "desc": "Capacidad para gestionar cantidades crecientes de datos, usuarios y tipos de solicitudes sin sacrificar el rendimiento ni la disponibilidad.",
+    "ref": "ScyllaDB. (s. f.). Database scalability. ScyllaDB Glossary. Recuperado el 28 de septiembre de 2025, de https://www.scylladb.com/glossary/database-scalability/"
+  },
+  {
+    "term": "Escalabilidad horizontal",
+    "desc": "Estrategia para aumentar la capacidad de un sistema añadiendo más servidores o «nodos» a la infraestructura existente.",
+    "ref": "Arsys. (2025, 17 de julio). Escalabilidad horizontal y vertical: dos opciones que garantizan el crecimiento de las aplicaciones. Blog de Arsys. Recuperado el 28 de septiembre de 2025, de https://www.arsys.es/blog/escalado-horizontal-vs-vertical"
+  },
+  {
+    "term": "Escalabilidad vertical",
+    "desc": "Estrategia para aumentar la capacidad de un sistema añadiendo más recursos a un único servidor existente",
+    "ref": "Arsys. (2025, 17 de julio). Escalabilidad horizontal y vertical: dos opciones que garantizan el crecimiento de las aplicaciones. Blog de Arsys. Recuperado el 28 de septiembre de 2025, de https://www.arsys.es/blog/escalado-horizontal-vs-vertical"
+  },
+  {
+    "term": "ETL (Extract, Transform, Load)",
+    "desc": "Proceso consistente en combinar datos de diferentes orígenes un gran repositorio central llamado almacenamiento de datos.",
+    "ref": "Amazon Web Services (AWS). (s. f.). ¿Qué es extracción, transformación y carga (ETL)?. Recuperado el 28 de septiembre de 2025, de https://aws.amazon.com/es/what-is/etl/"
+  },
+  {
+    "term": "Exportación de datos",
+    "desc": "Transferencia de datos a otro formato o sistema.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "Extracción de datos",
+    "desc": "Proceso de recuperar datos de diferentes fuentes.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill. et al., 2020"
+  },
+  {
+    "term": "Filtrado de datos",
+    "desc": "Selección de datos según criterios específicos.",
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning. & Morris, 2019"
+  },
+  {
+    "term": "Formato de registro",
+    "desc": "Estructura de cómo se organizan los campos.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "Formularios",
+    "desc": "Interfaces para capturar y mostrar datos.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "Fragmentación",
+    "desc": "División de una base de datos en partes distribuidas.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "Frecuencia de acceso",
+    "desc": "Medida de cuántas veces se consulta un dato.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill. et al., 2020"
+  },
+  {
+    "term": "Full Join",
+    "desc": "Une todas las filas, coincidan o no.",
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning. & Morris, 2019"
+  },
+  {
+    "term": "Full-text search",
+    "desc": "Búsqueda en texto completo dentro de una base de datos.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Funciones almacenadas",
+    "desc": "Conjunto de instrucciones SQL guardadas en el servidor.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "Función agregada",
+    "desc": "Función que combina múltiples valores (ej. MAX, SUM).",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Función hash",
+    "desc": "estructuras de datos fascinantes que desempeñan un papel crucial en el mundo de la programación y las bases de datos, las tablas de hash ofrecen: un método eficiente para organizar y recuperar datos.",
+    "ref": "WolfDiseñoWeb. (2025, 5 de abril). Tabla de hash. Recuperado de https://wolfdisenoweb.com/2025/04/05/tabla-de-hash/"
+  },
+  {
+    "term": "Garantía de consistencia",
+    "desc": "CLa consistencia de datos implica que una transacción debe llevar la base de datos de un estado válido a otro estado válido. Esto significa que todas las restricciones y reglas de integridad definidas en la base de datos deben ser respetadas y cumplidas en todo momento.",
+    "ref": "TheDataSchools. (2024). *Consistencia de datos*. Recuperado de [https://thedataschools.com/que-es/consistencia.html](https://thedataschools.com/que-es/consistencia.html)"
+  },
+  {
+    "term": "Gateway de datos",
+    "desc": "Una puerta de enlace de datos local es software que se instala en una red local. La puerta de enlace de datos local facilita el acceso a los datos de esa red y actúa como puente para proporcionar una transferencia rápida y segura de datos entre datos locales.",
+    "ref": "Microsoft. (2025, 10 de febrero). *Puerta de enlace de datos local – Power BI*. Microsoft Learn. [https://learn.microsoft.com/es-es/power-bi/connect-data/service-gateway-onprem](https://learn.microsoft.com/es-es/power-bi/connect-data/service-gateway-onprem)"
+  },
+  {
+    "term": "Gestión de usuarios",
+    "desc": "es un aspecto crítico para mantener la seguridad e integridad de sus bases de datos SQL Server. Si no gestionas adecuadamente a los usuarios de SQL Server, podrías compartir accidentalmente datos importantes con las personas equivocadas.",
+    "ref": "DataSunrise. (s. f.). *Gestión de usuarios en SQL Server*. DataSunrise. [https://www.datasunrise.com/es/centro-de-conocimiento/gestion-de-usuarios-en-sql-server/](https://www.datasunrise.com/es/centro-de-conocimiento/gestion-de-usuarios-en-sql-server/)"
+  },
+  {
+    "term": "Gestor de almacenamiento",
+    "desc": "Los gestores de datos o gestores de base de datos permiten administrar todo acceso a la base de datos, pues tienen el objetivo de servir de interfaz entre esta, el usuario y las aplicaciones.",
+    "ref": "Pérez, S. D. (2025). Gestor de base de datos: Qué es, funcionalidades y ejemplos. Intelequia. https://intelequia.com/es/blog/post/gestor-de-base-de-datos-qu%C3%A9-es-funcionalidades-y-ejemplos"
+  },
+  {
+    "term": "Graficación de datos",
+    "desc": "Una base de datos de gráficos se define como una plataforma especializada y de un solo propósito para crear y manipular gráficos. Los gráficos contienen nodos, bordes y propiedades, todos los cuales se utilizan para representar y almacenar datos de una manera que las bases de datos relacionales no están equipadas para hacer.",
+    "ref": "Oracle. (2024, 5 de noviembre). What is a graph database? Oracle. https://www.oracle.com/autonomous-database/what-is-graph-database/"
+  },
+  {
+    "term": "Grafos de dependencia",
+    "desc": "Un programa con múltiples tareas se puede ver como un gráfico de dependencias: los vértices representan las tareas y los bordes representan las dependencias entre las tareas.",
+    "ref": "ScienceDirect. (s. f.). Dependency graph. En Topics in Computer Science. https://www.sciencedirect.com/topics/computer-science/dependency-graph"
+  },
+  {
+    "term": "Gran volumen de datos (Big Data)",
+    "desc": "Big Data es un término que describe el gran volumen de datos, tanto estructurados como no estructurados, que inundan los negocios cada día. Pero no es la cantidad de datos lo que es importante. Lo que importa con el Big Data es lo que las organizaciones hacen con los datos. Big Data se puede analizar para obtener ideas que conduzcan a mejores decisiones y movimientos de negocios estratégicos.",
+    "ref": "PowerData. (s. f.). Big Data: ¿En qué consiste? Su importancia, desafíos y gobernabilidad. Recuperado de https://www.powerdata.es/big-data"
+  },
+  {
+    "term": "Granularidad",
+    "desc": "La granularidad de los datos se refiere al nivel de detalle o precisión de los datos. Por ejemplo, los datos que tienen un alto nivel de granularidad tendrían una gran cantidad de información individual, como registros o mediciones individuales. Los datos que tienen un bajo nivel de granularidad tendrían un pequeño número de piezas individuales de información, como datos de resumen o datos agregados.",
+    "ref": "Talon.One. (2025). What is granularity in data analysis and why is it important? Recuperado de https://www.talon.one/glossary/granularity"
+  },
+  {
+    "term": "Grid computing",
+    "desc": "se trata de unir a varios procesadores en una única tarea conectados a una misma red de comunicación o a internet y, generalmente, se conoce como procesamiento en paralelo.",
+    "ref": "Servnet. (2022, 1 de septiembre). Grid Computing: ¿Qué es y cuáles son sus características? Servnet México. Recuperado de https://www.servnet.mx/blog/grid-computing-que-es-y-cuales-son-sus-caracteristicas"
+  },
+  {
+    "term": "Grupo de registros",
+    "desc": "Un grupo de registros es una estructura de datos de formularios de oráculo que tiene un marco de columna/fila similar a una tabla de base de datos, hay tres tipos de grupos de registros: grupos de registros de consulta, grupos de registros que no son de consulta y grupos de registros estáticos.",
+    "ref": "CareerRide. (s. f.). What is a record group? What are different types of record group? Recuperado de https://www.careerride.com/oracle-db-record-group.aspx"
   },
   {
     "term": "Inconsistencia",
@@ -685,39 +435,9 @@
     "ref": "IBM. (2024a). Data redundancy. IBM Think. https://www.ibm.com/es-es/think/topics/data-redundancy"
   },
   {
-    "term": "Integridad",
-    "desc": "La integridad de los datos se refiere a su corrección, coherencia y validez, asegurada mediante reglas como integridad de entidad, dominio y referencial.",
-    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
-  },
-  {
-    "term": "Seguridad",
-    "desc": "La seguridad en bases de datos protege los datos contra accesos no autorizados, incluye mecanismos como roles, permisos, auditoría y cifrado.",
-    "ref": "IONOS. (2024). Sistema gestor de base de datos (SGBD): definición y funciones. IONOS Digital Guide. https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd"
-  },
-  {
-    "term": "Atomicidad",
-    "desc": "La atomicidad garantiza que una transacción se ejecute completamente o no se ejecute en absoluto ('todo o nada').",
-    "ref": "DataCamp. (2023). Atomicity in Databases: All or Nothing Transactions. https://www.datacamp.com/es/tutorial/atomicity"
-  },
-  {
-    "term": "Consistencia",
-    "desc": "La consistencia asegura que cada transacción lleve a la base de datos de un estado válido a otro válido, respetando restricciones y reglas.",
-    "ref": "KeepCoding. (2023). ¿Qué es ACID en bases de datos?. KeepCoding Blog. https://keepcoding.io/blog/que-es-acid-bases-datos"
-  },
-  {
-    "term": "Durabilidad",
-    "desc": "La durabilidad garantiza que los cambios de una transacción confirmada persistan incluso en caso de fallos del sistema.",
-    "ref": "BMC. (2021). ACID: Atomic, consistent, isolated, durable. BMC Blogs. https://www.bmc.com/blogs/acid-atomic-consistent-isolated-durable"
-  },
-  {
-    "term": "DBA (Administrador de base de datos)",
-    "desc": "El DBA es el profesional encargado de la administración, seguridad, rendimiento y disponibilidad de las bases de datos.",
-    "ref": "IONOS. (2024). Sistema gestor de base de datos (SGBD): definición y funciones. IONOS Digital Guide. https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd"
-  },
-  {
-    "term": "Dato",
-    "desc": "Un dato es un valor elemental sin contexto, como '25' o 'Juan Pérez'.",
-    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
+    "term": "Independencia de datos",
+    "desc": "La independencia de datos se define como una propiedad del DBMS que le ayuda a cambiar el esquema de la base de datos en un nivel de un sistema de base de datos sin necesidad de cambiar el esquema en el siguiente nivel superior",
+    "ref": "Guru99. (2024, 28 de junio). Independencia de datos en DBMS: física y lógica con ejemplos. Recuperado de https://www.guru99.com/es/dbms-data-independence.html"
   },
   {
     "term": "Información",
@@ -725,38 +445,153 @@
     "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
   },
   {
-    "term": "SGBD",
-    "desc": "Es un software que permite crear, administrar y proteger bases de datos, facilitando el acceso a los usuarios y aplicaciones.",
-    "ref": "IONOS. (2024). Sistema gestor de base de datos (SGBD): definición y funciones. IONOS Digital Guide. https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd"
+    "term": "Inner Join",
+    "desc": "Combina los registros de dos tablas si hay valores coincidentes en un campo común",
+    "ref": "Microsoft Corporation. (2023, 4 de abril). Operación INNER JOIN (Microsoft Access SQL). Recuperado de https://learn.microsoft.com/es-es/office/client-developer/access/desktop-database-reference/inner-join-operation-microsoft-access-sql"
   },
   {
-    "term": "Entidades",
-    "desc": "Son objetos o conceptos del mundo real sobre los que se desea almacenar información en la base de datos.",
-    "ref": "Quizlet. (2024). Los sistemas de gestión de bases de datos (SGBD) y el modelo de referencia de ANSI. https://quizlet.com/es/721081760/los-sistemas-de-gestion-de-bases-de-datos-sgbd-el-modelo-de-referencia-de-ansi-flash-cards"
+    "term": "Join",
+    "desc": "El Join de “toda la vida”. El join per defecto que se aplica cuando no indicamos otra cosa al hacer la consulta. Devuelve sólo aquellas filas donde haya un “match”, es decir, las filas donde el valor del campo de la tabla A que se utiliza para hacer el Join coincida con el valor del campo correspondiente en la tabla B.  Ejemplo: devolver todos los productos para los que haya como mínimo un pedido en los últimos días (el inner join enlazará el campo producto en la tabla Pedido con la clave primaria de ese producto en la tabla Producto)..",
+    "ref": "Cabot, J. (2022, 25 de mayo). Todos los tipos de JOIN en SQL: Guía de referencia rápida. Ingeniería de Software. https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia"
   },
   {
-    "term": "Atributos",
-    "desc": "Son las características que describen a una entidad, como 'nombre' o 'dirección' en la entidad Cliente.",
-    "ref": "Quizlet. (2024). Los sistemas de gestión de bases de datos (SGBD) y el modelo de referencia de ANSI. https://quizlet.com/es/721081760/los-sistemas-de-gestion-de-bases-de-datos-sgbd-el-modelo-de-referencia-de-ansi-flash-cards"
-  },
-  {
-    "term": "Relaciones",
-    "desc": "Son asociaciones entre entidades, por ejemplo, un Cliente realiza Facturas.",
-    "ref": "Quizlet. (2024). Los sistemas de gestión de bases de datos (SGBD) y el modelo de referencia de ANSI. https://quizlet.com/es/721081760/los-sistemas-de-gestion-de-bases-de-datos-sgbd-el-modelo-de-referencia-de-ansi-flash-cards"
-  },
-  {
-    "term": "Llave primaria",
-    "desc": "Es el atributo que identifica de manera única a cada registro de una tabla, sin repetidos ni valores nulos.",
-    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
+    "term": "Left Join",
+    "desc": "Cuando quieres todas las filas para las que haya match pero también aquellas de la Tabla A que no hagan match. Siguiendo el ejemplo anterior, si quieres listar todos los productos con datos de sus pedidos pero mostrando también aquellos productos para lo que no tengas todavía un pedido, la solución sería hacer una Left Outer join entre Producto y Pedido.",
+    "ref": "Cabot, J. (2022, 25 de mayo). Todos los tipos de JOIN en SQL: Guía de referencia rápida. Ingeniería de Software. https://ingenieriadesoftware.es/tipos-sql-join-guia-referencia"
   },
   {
     "term": "Llave foránea",
-    "desc": "Es un atributo que enlaza una tabla con otra, refiriéndose a la llave primaria de la tabla relacionada (integridad referencial).",
-    "ref": "Wikipedia. (2024b). Integridad referencial. En Wikipedia. https://es.wikipedia.org/wiki/Integridad_referencial"
+    "desc": "La clave foránea es cuando asignamos el valor de una clave primaria de una entidad a otra entidad.",
+    "ref": "Informáticos sin Límites. (2022, 28 de junio). Clave primaria y foránea en bases de datos. https://informaticosinlimites.com/base-de-datos/clave-primaria-y-foranea/"
   },
   {
-    "term": "Cardinalidad",
-    "desc": "Indica cuántas instancias de una entidad pueden asociarse con otra: uno a uno, uno a muchos o muchos a muchos.",
+    "term": "Metadatos",
+    "desc": "Los metadatos son un término que se acuñó en los años 60 para describir un conjunto de datos, pero es ahora cuando está obteniendo más importancia y cuando más se está escuchando por el mundo virtual. Su primera acepción fue la de dato sobre dato, pero a partir de 2004 fue evolucionando hasta convertirse en los que hoy conocemos: metadatos.",
+    "ref": "PowerData. (s.f.). Metadatos, definición y características. https://www.powerdata.es/metadatos"
+  },
+  {
+    "term": "Middleware",
+    "desc": "El middleware es un software con el que las diferentes aplicaciones se comunican entre sí. Brinda funcionalidad para conectar las aplicaciones de manera inteligente y eficiente, de forma que se pueda innovar más rápido. El middleware actúa como un puente entre tecnologías, herramientas y bases de datos diversas para que pueda integrarlas sin dificultad en un único sistema. Este sistema único provee un servicio unificado a sus usuarios. Por ejemplo, una aplicación frontend de Windows envía y recibe datos desde un servidor backend de Linux, pero los usuarios de la aplicación no están al tanto de la diferencia",
+    "ref": "Amazon Web Services, Inc. (s.f.). ¿Qué es el middleware?. https://aws.amazon.com/es/what-is/middleware/"
+  },
+  {
+    "term": "Modelo",
+    "desc": "Muestra la estructura lógica de la base, incluidas las relaciones y limitaciones que determinan cómo se almacenan los datos y cómo se accede a ellos.",
+    "ref": "Lucidchart. (s. f.). ¿Qué es un modelo de base de datos?. Recuperado el 28 de septiembre de 2025, de https://www.lucidchart.com/pages/es/que-es-un-modelo-de-base-de-datos"
+  },
+  {
+    "term": "Modelo conceptual",
+    "desc": "El modelado conceptual de datos es uno de los tres tipos de modelado de datos, también conocido como etapas del modelado de datos. Este proceso implica la creación de modelos de datos conceptuales, que ayudan a las organizaciones a visualizar bases de datos, lo que lleva a una construcción de bases de datos más eficiente y completa..",
+    "ref": "Agar, R. (2025, 6 de junio). ¿Qué es el modelado de datos conceptual?. ER/Studio. https://erstudio.com/blog/conceptual-data-modeling/"
+  },
+  {
+    "term": "Modelo entidad-relación",
+    "desc": "El modelo entidad relación (ERD o modelos ER) es una herramienta que permite representar de manera simplificada cómo personas, objetos o conceptos se relacionan entre sí. Se utiliza para exponer cómo se organiza la información en una base de datos..",
+    "ref": "UNIR México. (2024, 12 de abril). ¿Qué es el modelo entidad-relación y para qué se utiliza? https://mexico.unir.net/noticias/ingenieria/modelo-entidad-relacion/"
+  },
+  {
+    "term": "Modelo físico",
+    "desc": "Define cómo se almacenan realmente los datos en soportes de almacenamiento: ficheros, índices, particiones y parámetros de hardware/DBMS.",
+    "ref": "AWS (2024); Zapata.pdf"
+  },
+  {
+    "term": "Modelo lógico",
+    "desc": "Especifica cómo se organizan los datos según el modelo del SGBD elegido (por ejemplo, tablas y claves en el modelo relacional).",
+    "ref": "AWS (2024); Lopez.pdf"
+  },
+  {
+    "term": "Normalización",
+    "desc": "Proceso de organizar los datos para reducir redundancia.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "OLAP (Online Analytical Processing)",
+    "desc": "Procesamiento de consultas analíticas y multidimensionales.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "OLTP (Online Transaction Processing)",
+    "desc": "Procesamiento en línea de transacciones operativas.",
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning. & Morris, 2019"
+  },
+  {
+    "term": "Optimización de consultas",
+    "desc": "Proceso de mejorar la eficiencia en consultas SQL.",
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning. & Morris, 2019"
+  },
+  {
+    "term": "Outer Join",
+    "desc": "Incluye filas sin coincidencias en al menos una tabla.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Particionamiento",
+    "desc": "División de tablas grandes en fragmentos más manejables.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Particionamiento horizontal",
+    "desc": "División de filas en varias tablas.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "Particionamiento vertical",
+    "desc": "División de columnas en varias tablas.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill. et al., 2020"
+  },
+  {
+    "term": "Participación",
+    "desc": "Restricción que indica si todas las entidades de un conjunto deben participar en una relación (total/obligatoria) o si es opcional (parcial).",
+    "ref": "09-ModeloEntRel.PDF; ApunteER.doc"
+  },
+  {
+    "term": "Plan de ejecución",
+    "desc": "Estrategia que sigue el SGBD para resolver una consulta.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "Planificador de consultas",
+    "desc": "Módulo que determina la estrategia de ejecución.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "Planificador de transacciones",
+    "desc": "Módulo que ordena transacciones para evitar conflictos.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill. et al., 2020"
+  },
+  {
+    "term": "Primera forma normal (1FN)",
+    "desc": "Eliminación de atributos multivalorados en una tabla.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Procesador de consultas",
+    "desc": "Componente del SGBD que analiza, optimiza y ejecuta consultas, transformándolas en planes físicos eficientes.",
+    "ref": "Sistema Gestor de Base de Datos.pptx"
+  },
+  {
+    "term": "Query tuning",
+    "desc": "Ajuste fino de consultas para mejorar su rendimiento.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill. et al., 2020"
+  },
+  {
+    "term": "Quinta forma normal (5FN)",
+    "desc": "Reduce redundancias a través de descomposición de tablas.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Recuperación ante desastres",
+    "desc": "Estrategias para restaurar datos tras fallos.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Redundancia",
+    "desc": "La redundancia de datos ocurre cuando se almacenan múltiples copias del mismo dato en diferentes lugares, lo que puede provocar inconsistencia si no se controlan.",
+    "ref": "IBM. (2024a). Data redundancy. IBM Think. https://www.ibm.com/es-es/think/topics/data-redundancy"
+  },
+  {
+    "term": "Regla de integridad de dominio",
+    "desc": "Exige que los valores de un atributo pertenezcan a un dominio permitido (tipo de dato, rango o formato válido).",
     "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
   },
   {
@@ -765,18 +600,193 @@
     "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
   },
   {
-    "term": "Regla de integridad de dominio",
-    "desc": "Exige que los valores de un atributo pertenezcan a un dominio permitido (tipo de dato, rango o formato válido).",
-    "ref": "Scribd. (2023). Tema 1. SGBD y el DDL. https://www.scribd.com/document/762535557/Tema-1-SGBD-y-el-DDL"
-  },
-  {
     "term": "Regla de integridad referencial",
     "desc": "Garantiza que una clave foránea siempre corresponda a un valor existente en la tabla referenciada.",
     "ref": "Wikipedia. (2024b). Integridad referencial. En Wikipedia. https://es.wikipedia.org/wiki/Integridad_referencial"
   },
   {
-    "term": "DBMS",
-    "desc": "Es la sigla en inglés para Sistema Gestor de Bases de Datos (SGBD). Cumple las mismas funciones de administración, integridad y seguridad de datos.",
+    "term": "Relaciones",
+    "desc": "Son asociaciones entre entidades, por ejemplo, un Cliente realiza Facturas. Pueden ser binarias, ternarias o n-arias, y recursivas cuando una entidad se relaciona consigo misma; pueden llevar atributos propios (p. ej., fecha).",
+    "ref": "ApunteER.doc; BASES DE DATOS-MIS 308 TEMA 3 FINAL-X.doc; Quizlet. (2024). Los sistemas de gestión de bases de datos (SGBD) y el modelo de referencia de ANSI. https://quizlet.com/es/721081760/los-sistemas-de-gestion-de-bases-de-datos-sgbd-el-modelo-de-referencia-de-ansi-flash-cards"
+  },
+  {
+    "term": "Replica de datos",
+    "desc": "Copia de datos en diferentes servidores para disponibilidad.",
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning. & Morris, 2019"
+  },
+  {
+    "term": "Respaldo diferencial",
+    "desc": "Copia de seguridad que guarda cambios desde el último respaldo completo.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "Respaldo incremental",
+    "desc": "Copia de seguridad que almacena solo los cambios recientes.",
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning. & Morris, 2019"
+  },
+  {
+    "term": "Right Join",
+    "desc": "Devuelve todas las filas de la tabla derecha y las coincidentes de la izquierda.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill. et al., 2020"
+  },
+  {
+    "term": "Rollback",
+    "desc": "Reversión de los cambios realizados en una transacción.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Savepoint",
+    "desc": "Marca intermedia dentro de una transacción para posibles retrocesos.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "Segunda forma normal (2FN)",
+    "desc": "Eliminación de dependencias parciales en una tabla.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "Seguridad",
+    "desc": "La seguridad en bases de datos protege los datos contra accesos no autorizados, incluye mecanismos como roles, permisos, auditoría y cifrado.",
     "ref": "IONOS. (2024). Sistema gestor de base de datos (SGBD): definición y funciones. IONOS Digital Guide. https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd"
+  },
+  {
+    "term": "Serialización",
+    "desc": "Ejecución de transacciones como si fueran secuenciales.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "SGBD (DBMS)",
+    "desc": "Software que administra bases de datos Es un software que permite crear, administrar y proteger bases de datos, facilitando el acceso a los usuarios y aplicaciones Es la sigla en inglés para Sistema Gestor de Bases de Datos (SGBD). Cumple las mismas funciones de administración, integridad y seguridad de datos.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015; IONOS. (2024). Sistema gestor de base de datos (SGBD): definición y funciones. IONOS Digital Guide. https://www.ionos.com/es-us/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd"
+  },
+  {
+    "term": "Sharding",
+    "desc": "Estrategia de particionamiento de datos en servidores independientes.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "Sistema distribuido",
+    "desc": "Conjunto de bases de datos interconectadas en red.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "SQL dinámico",
+    "desc": "Código SQL generado y ejecutado en tiempo de ejecución.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "SQL embebido",
+    "desc": "Instrucciones SQL incluidas dentro de programas host.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "Subconsulta",
+    "desc": "Consulta anidada dentro de otra.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Sublenguajes de datos",
+    "desc": "Partes de SQL: DDL (definición de datos) y DML (manipulación de datos) que permiten definir y operar sobre la base de datos.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe (2016); Lopez.pdf"
+  },
+  {
+    "term": "Tercera forma normal (3FN)",
+    "desc": "Eliminación de dependencias transitivas.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill. et al., 2020"
+  },
+  {
+    "term": "Transacción",
+    "desc": "Unidad lógica de trabajo en una base de datos.",
+    "ref": "Coronel, C., & Morris, S. (2019). Database systems: Design, implementation, and management (13th ed.). Cengage Learning. & Morris, 2019"
+  },
+  {
+    "term": "Trigger (disparador)",
+    "desc": "Procedimiento que se ejecuta automáticamente ante un evento.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "Vista",
+    "desc": "Una vista es una tabla virtual generada a partir de la ejecución de varias consultas sobre una o más tablas.",
+    "ref": "Huaraca, A. (2020, 16 de marzo). ¿Qué son las vistas en la base de datos? Codideep. https://codideep.com/blogpost/que-son-las-vistas-en-la-base-de-datos"
+  },
+  {
+    "term": "Vista materializada",
+    "desc": "Vista almacenada físicamente en la base de datos.",
+    "ref": "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). Database system concepts (7th ed.). McGraw-Hill. et al., 2020"
+  },
+  {
+    "term": "Álgebra relacional",
+    "desc": "Conjunto formal de operaciones aplicables a bases de datos relacionales.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Índice",
+    "desc": "Se utilizan para localizar datos rápidamente sin tener que buscar en cada fila de una tabla de base de datos cada vez que se accede a ella.",
+    "ref": "Wikipedia. (2025). Database index. En Wikipedia. Recuperado de https://en.wikipedia.org/wiki/Database_index"
+  },
+  {
+    "term": "Índice B-Tree",
+    "desc": "Estructura de árbol balanceado usada para indexación.",
+    "ref": "Date, C. J. (2004). An introduction to database systems (8th ed.). Pearson Addison-Wesley., 2004"
+  },
+  {
+    "term": "Índice compuesto",
+    "desc": "Índice basado en más de un atributo para mejorar las búsquedas.",
+    "ref": "Connolly, T., & Begg, C. (2015). Database systems: A practical approach to design, implementation, and management (6th ed.). Pearson Education. & Begg, 2015"
+  },
+  {
+    "term": "Índice hash",
+    "desc": "Técnica que localiza registros a través de valores de función hash.",
+    "ref": "Elmasri, R., & Navathe, S. B. (2016). Fundamentals of database systems (7th ed.). Pearson. & Navathe, 2016"
+  },
+  {
+    "term": "Atomicidad",
+    "desc": "Significa que una transacción debe tener éxito por completo o no ejecutarse en absoluto. Ejemplo: en una transferencia bancaria, ambos débitos y créditos deben completarse; si uno falla, todo se revierte. Sirve para evitar estados intermedios inconsistentes.",
+    "ref": "DataCamp. (2025, 24 de abril). Atomicidad en las bases de datos: La columna vertebral de las transacciones fiables. https://www.datacamp.com/es/tutorial/atomicity"
+  },
+  {
+    "term": "Consistencia",
+    "desc": "La consistencia se refiere a la propiedad de mantener la integridad y coherencia de los datos antes y después de una transacción. Por ejemplo, si una transacción implica transferir dinero de una cuenta a otra, la suma total de dinero en ambas cuentas debe permanecer constante antes y después de la transacción. Sirve para evitar violaciones de reglas de integridad y mantener datos válidos.",
+    "ref": "TheDataSchools. (2024). Consistencia de datos. https://thedataschools.com/que-es/consistencia.html"
+  },
+  {
+    "term": "Aislamiento",
+    "desc": "El aislamiento impide que las transacciones interfieran entre sí. Ejemplo: si dos usuarios intentan actualizar el mismo registro simultáneamente, el sistema debe asegurar que una transacción se complete antes de que la otra comience. Sirve para evitar efectos secundarios no deseados y garantizar resultados predecibles.",
+    "ref": "DataCamp. (2025). Transacciones ACID: ¿Qué son y por qué son importantes? https://www.datacamp.com/es/blog/acid-transactions"
+  },
+  {
+    "term": "Durabilidad",
+    "desc": "La durabilidad garantiza que, una vez finalizada una transacción, sus cambios se almacenan permanentemente en la base de datos. Ejemplo: si una transacción de compra se completa, los detalles de la compra deben persistir incluso si ocurre una falla del sistema inmediatamente después. Sirve para asegurar que los datos no se pierdan tras fallos.",
+    "ref": "DataCamp. (2025). Transacciones ACID: ¿Qué son y por qué son importantes? https://www.datacamp.com/es/blog/acid-transactions"
+  },
+  {
+    "term": "Registro",
+    "desc": "Es una unidad de información compuesta por campos relacionados, representando una entidad única dentro de una tabla o colección de datos.",
+    "ref": "Aratecnia Sistemas y Servicios. (s. f.). Registro (base de datos). Recuperado de https://aratecnia.es/glosario/registro-base-de-datos/"
+  },
+  {
+    "term": "Tabla",
+    "desc": "Tipo de modelado de datos donde se guarda una información recogida por un sistema.",
+    "ref": "Comparasoftware Blog. (s. f.). ¿Qué es una tabla en base de datos? Recuperado de https://blog.comparasoftware.com/que-es-tabla-en-base-de-datos/"
+  },
+  {
+    "term": "Informe",
+    "desc": "Documento que presenta información específica de los datos almacenados en una base de datos.",
+    "ref": "CódigoSQL. (s. f.). ¿Qué es un informe en base de datos? Recuperado de https://codigosql.top/bases-de-datos/informe/"
+  },
+  {
+    "term": "Integridad",
+    "desc": "La integridad de los datos significa que los datos siguen siendo precisos, completos y coherentes a lo largo de su ciclo de vida.",
+    "ref": "IBM. (2024, 5 de abril). ¿Qué es la integridad de los datos? https://www.ibm.com/mx-es/think/topics/data-integrity"
+  },
+  {
+    "term": "Confidencialidad",
+    "desc": "Garantiza el necesario nivel de secreto de la información y de su tratamiento, para prevenir su divulgación no autorizada cuando está almacenada o en tránsito.",
+    "ref": "Banco Santander. (s. f.). ¿Qué es la confidencialidad de la información? https://www.bancosantander.es/glosario/confidencialidad-informacion"
+  },
+  {
+    "term": "Dependencia de existencia",
+    "desc": "Se produce cuando una entidad débil necesita de la presencia de una fuerte para existir. Ejemplo: una Transacción no puede existir sin una Cuenta.",
+    "ref": "Gestión de Bases de Datos. (s. f.). Tema 2: Teoría – Diseño de modelos lógicos normalizados. Recuperado de https://gestionbasesdatos.readthedocs.io/es/latest/Tema2/Teoria.html"
   }
 ]
